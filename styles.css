@@ -23,14 +23,16 @@ body {
 .boggle-cell {
     width: 50px;
     height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #ffffff;
-    border: 1px solid #ccc;
+    text-align: center;
     font-size: 24px;
     font-weight: bold;
-    cursor: pointer;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.boggle-cell:focus {
+    outline: none;
+    border-color: #4CAF50;
 }
 
 #shake-button {
