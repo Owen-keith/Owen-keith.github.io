@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+}
+
+.boggle-container {
+    display: inline-block;
+    margin-top: 50px;
+}
+
+.boggle-board {
+    display: grid;
+    grid-template-columns: repeat(4, 50px);
+    grid-gap: 5px;
+    margin-bottom: 20px;
+}
+
+.boggle-row {
+    display: contents;
+}
+
+.boggle-cell {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#shake-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#shake-button:hover {
+    background-color: #45a049;
+}
