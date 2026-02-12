@@ -1,2 +1,3 @@
-title: OK Website
-theme: jekyll-theme-cayman
+title: "Owen's Library"
+description: "Write ups on various HPC/AI solution architect and system admin projects"
+theme: minima
