@@ -5,13 +5,8 @@ title: Home
 
 Hello! I am Owen Keith, a System Administrator and Computer Science Theory Enthusiast. Welcome to my personal website where I document my projects!
 
-## Projects
+## Posts
 
-{% assign projects = site.projects | sort: "date" | reverse %}
-{% for project in projects %}
-- [{{ project.title }}]({{ project.url | relative_url }}){% if project.date %} — {{ project.date | date: "%Y-%m-%d" }}{% endif %}
+{% for post in site.posts %}
+- [{{ post.title }}]({{ post.url | relative_url }}) — {{ post.date | date: "%Y-%m-%d" }}
 {% endfor %}
-
-{% if site.projects == empty %}
-*(No projects found — see troubleshooting steps below.)*
-{% endif %}
