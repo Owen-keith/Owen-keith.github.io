@@ -5,3 +5,14 @@ theme: minima
 markdown: kramdown
 kramdown:
   input: GFM
+
+collections:
+  projects:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: post
